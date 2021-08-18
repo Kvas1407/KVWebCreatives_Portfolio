@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@600&display=swap');
+
+#root, html{
+    margin:0;
+}
+body{
+   background-color: rgb(0, 55, 80);
+}
+
+header{
+    background-image: url('/img/back.jpg');
+    height:350px;
+}
+.header-div{
+    background-color: rgb(34, 34, 34);
+    margin:20px 20px auto 20px;
+    height:330px;
+    color:rgb(206, 123, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:25px;
+    padding-left:10px;
+    padding-top:2px;
+}
+.header-para{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:16px;
+    font-weight: lighter;
+    text-align: center;
+    padding-right:10px;
+}
+
+main{
+    background-color: rgb(237, 255, 173);
+    height:600px;
+    margin:-3.5em 20px auto 20px;
+}
+h2{
+    color:rgb(34, 34, 34);
+    text-align:center;
+    padding-top:1em;
+    font-family:STIX Two Text;
+    text-transform: uppercase;
+    font-size:40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-row-gap:1px;
+    grid-template-columns: auto auto;
+  }
+  
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(192, 212, 117);
+    width:210px;
+    position: relative;
+  }
+ .grid-img{
+     width:210px;
+ }
+ .grid-img1{
+    width:210px;
+    height:100px;
+}
+.grid-img2{
+    width:210px;
+    height:140px;
+}
+ .overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 190px;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    letter-spacing: 8px;
+    font-size: 14px;
+    padding: 20px 20px 20px 0px;
+    text-align: center;
+    cursor:pointer;
+  }
+  
+  .grid-item:hover .overlay {
+    opacity: 1;
+  }
+
+  .about-me{
+      background-color: rgb(255, 255, 255);
+      height: 1050px;
+      margin:10px 20px 20px;
+      border-radius:5px;
+  }
+
+  h3{
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      text-transform: capitalize;
+      padding:20px;
+      font-size:35px;
+      color: rgb(206, 123, 0);
+      font-weight: lighter;
+  }
+  blockquote{
+      border-left: 4px double rgb(206, 123, 0);
+      padding-left:10px;
+      text-align: justify;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size:13px;
+  }
+
+  h4{
+      color: rgb(0, 55, 80);
+      padding:20px;
+      text-transform: uppercase;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .skills{
+      display: inline-block;
+  }
+  h6{
+     margin-top:-1em;
+     padding-left:20px;
+     font-size:14px;
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: bold;
+     text-transform: capitalize;
+  }
+  .h6{
+      font-weight:lighter;
+
+  }
+  .slide-img{
+      max-width:100%;
+      margin-left:11px;
+     
+  }
+  .slide-set{
+      width:400px;
+      animation:fading 5s infinite;
+      border:2px double rgb(0, 55, 80);
+  }
+  @keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+  .experience{
+    background-color: rgb(237, 255, 173);
+    height:850px;
+    margin:10px 20px auto 20px;
+  }
+
+  .exp-paragraph{
+      text-align:center;
+      text-transform: uppercase;
+      margin:10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: italic;
+      letter-spacing: 1px;
+      font-weight: lighter;
+      font-size:14px;
+  }
+  .exp1{
+      width:382px;
+      height:200px;
+      background-color: rgb(245, 253, 216);
+      margin:20px;
+  }
+  h5{
+      margin:20px;
+      padding-top:20px;
+      font-family: STIX Two Text;
+      font-size:18px;
+  }
+  .exp1 ul{
+      list-style-type: square; }
+
+.exp1 ul li{
+    margin-left:-0.4em;
+    font-weight:lighter;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:13px;
+}
+
+footer{
+    background-color: rgb(34, 34, 34);
+    margin:-20px 20px auto 20px;
+    height:150px;
+    color:rgb(206, 123, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:25px;
+    padding-left:10px;
+    padding-top:2px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.social{
+    width:30px;
+    height:30px;
+    margin-left:4px;
+}
+
+
+
+
+@media only screen and (min-width:850px){
+
+    h1{
+        margin-left:3em;
+    }
+    header{
+        height:250px;
+    }
+
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+
+    .grid-item{
+        width:400px;
+        height:300px;
+    }
+    main{
+        height:800px;
+    }
+    .grid-img2{
+        width:400px;
+        height:300px;
+    }
+    .overlay{
+        width:380px;
+    }
+
+    h3{
+        font-size:40px;
+    }
+    blockquote{
+        font-size:18px;
+    }
+
+    h6,.h6{
+        font-size:16px;
+    }
+    .slide-img{
+        margin-left:20em;
+    }
+    .slide-set{
+        width:600px;
+    }
+    .about-me{
+        height:1150px;
+    }
+
+    .exp-grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    .exp1{
+        width:350px;
+    }
+
+    .experience{
+        height:450px;
+    }
+}
